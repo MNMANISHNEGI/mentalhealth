@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Results - Echoes of Hope</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">ECHOES OF HOPE</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/questions">Give Assessment</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#book-online">Book Online</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="results-main">
+        <h1>Assessment Results</h1>
+        <p>Thank you for completing the assessment. Here are your results:</p>
+        <ul>
+            <li>Depression: {{ depression }}</li>
+            <li>Anxiety: {{ anxiety }}</li>
+            <li>Stress: {{ stress }}</li>
+        </ul>
+
+        <h2>Recommended Resources</h2>
+        <div class="recommendations">
+            <section>
+                <h3>Depression</h3>
+                <p>Based on your results, we recommend the following resources for depression:</p>
+                <!-- Embed YouTube video -->
+                <iframe width="560" height="315" src="{{ depression_video }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Article: <a href="{{ depression_article }}" target="_blank">Read Article</a></p>
+            </section>
+            <section>
+                <h3>Anxiety</h3>
+                <p>Based on your results, we recommend the following resources for anxiety:</p>
+                <!-- Embed YouTube video -->
+                <iframe width="560" height="315" src="{{ anxiety_video }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Article: <a href="{{ anxiety_article }}" target="_blank">Read Article</a></p>
+            </section>
+            <section>
+                <h3>Stress</h3>
+                <p>Based on your results, we recommend the following resources for stress:</p>
+                <!-- Embed YouTube video -->
+                <iframe width="560" height="315" src="{{ stress_video }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Article: <a href="{{ stress_article }}" target="_blank">Read Article</a></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Contact us: contact@echoesofhope.org</p>
+        <p>Follow us on social media</p>
+    </footer>
+</body>
+</html>

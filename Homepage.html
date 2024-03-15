@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echoes of Hope</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">ECHOES OF HOPE</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="{{ url_for('questions') }}">Give Assessment</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#book-online">Book Online</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>WELCOME</h1>
+        <h2>WE ARE ECHOES OF HOPE</h2>
+        <p>"Our mission is to illuminate the path to mental wellness for young adults. Echoes of Hope is more than just a platform; it's a movement towards breaking the stigma surrounding mental health, encouraging open conversations, and fostering an environment where seeking help is seen as a step of courage and strength."</p>
+    </section>
+    <!-- Additional sections can be added here -->
+    <footer>
+        <p>Contact us: contact@echoesofhope.org</p>
+        <p>Follow us on social media</p>
+    </footer>
+</body>
+</html>
